@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(244, 222, 222);
+
+  /* Background GIF */
+  background-image: url('Boobs&Skull.gif'); /* Ensure this file is in the same folder */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  #kissingSkull {
+    display: block;
+    margin: 20px auto; /* Centers the image */
+    width: 30%; /* Adjust this to make it bigger or smaller */
+    max-width: 300px; /* Prevents it from getting too large */
+    height: auto; /* Maintains the aspect ratio */
+  }
+  
+  
+}
+
+#playAudioButton {
+  position: fixed; /* Ensures it stays in place */
+  bottom: 10%; /* Keeps it low on the screen */
+  left: 50%; /* Centers it horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+
+  padding: 6px 14px; /* Keeps button small */
+  font-size: 14px; /* Adjust font size */
+  font-family: 'Arial', sans-serif; /* Font style */
+  font-weight: bold;
+  background-color: #7d2535; /* Soft red/pink button */
+  color: white; /* Text color */
+  border: 2px solid #f6f5f5; /* Border color */
+  border-radius: 8px; /* Slightly rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+#playAudioButton:hover {
+  background-color: #7d2535; /* Darker red on hover */
+}
+
+/* Prevent button from moving when clicked */
+#playAudioButton:active {
+  transform: translateX(-50%) scale(1); /* No movement when clicked */
+}
+
+
+/* Style for the "Yes" and "No" buttons */
+#Button1 {
+  position: fixed;
+  top: 80%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+#Button2 {
+  position: absolute;
+  left: 39%;
+  top: 78%;
+}
+

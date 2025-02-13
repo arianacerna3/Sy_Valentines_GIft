@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>VALENTINE'S DAY</title>
+ <link
+      rel="icon"
+      type="image/png"
+      sizes="100%"
+      href="https://cdn-icons-png.flaticon.com/512/9444/9444300.png"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <p>
+  Happy Valentine's Day Pookie
+  <p></p>
+  Will you be my Valentine?
+  <p></p>
+  "And I wouldn't do this for no man
+  <p></p>
+  It's a understatement if I tell you you's important"
+  <p></p>
+  Can't Wait - Doja Cat
+ </p>
+ <img id="kissingSkull" src="KissingSkull.gif">
+
+<!-- Buttons -->
+<button id="Button1">Yes!</button>
+<button id="Button2">No</button>
+
+<!-- Play Sound Button (Below the Yes/No buttons) -->
+<button id="playAudioButton">Click 4 Audio</button>
+
+<!-- Audio Element (Hidden) -->
+<audio id="valentineAudio">
+  <source src="Doja Cat - Can't Wait (Audio) 4.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // Move the No button when hovered
+  const Button2 = document.getElementById('Button2');
+  let left = 40;
+  Button2.addEventListener('mouseover', function() {
+    if(left == 40){
+      left = 48;
+    }else{
+      left = 40;
+    }
+    this.style.left = left + '%';
+  });
+
+  // Alert when Yes button is clicked
+  document.getElementById('Button1').addEventListener('click', function() {
+    alert('Cool, now you know I actually care about you or whatever. We should either watch a documentary or play Warzone. I hope you love this as much as I loved making it. <3');
+   
+  });
+
+  // Play the selected part of the song when button is clicked
+  const audio = document.getElementById('valentineAudio');
+  const playButton = document.getElementById('playAudioButton');
+
+  playButton.addEventListener('click', function () {
+    audio.currentTime = 130; // Start at 2:10 (130 seconds)
+    audio.play();
+  });
+
+  // Stop at 2:16 (136 seconds)
+  audio.addEventListener('timeupdate', function () {
+    if (audio.currentTime >= 138) {
+      audio.pause();
+      audio.currentTime = 130; // Reset to start point
+    }
+  });
+</script>
+
+</body>
+</html>
