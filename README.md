@@ -1,1 +1,1 @@
-
+This project was created as a Valentine's Day gift for my boyfriend. Since he is currently majoring in Computer Science, I wanted to design something that aligned with his interests. It was a fun and meaningful project, and I'm so happy with how it turned out!
